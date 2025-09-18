@@ -57,17 +57,17 @@ background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 <div align="center">
 
 ### 🏠 Homepage & Registration
-![Registration]<img width="942" height="479" alt="image" src="https://github.com/user-attachments/assets/ef855f1e-4d51-429e-a7c1-2f05ad883bd8" />
+<img width="942" height="479" alt="image" src="https://github.com/user-attachments/assets/ef855f1e-4d51-429e-a7c1-2f05ad883bd8" />
 
 <img width="935" height="468" alt="image" src="https://github.com/user-attachments/assets/1d010d5c-9728-4d12-ba6e-6a9ef5321d13" />
 
 
 ### 📊 Feedback Dashboard
-![Dashboard]<img width="867" height="443" alt="image" src="https://github.com/user-attachments/assets/ddd422b5-9b53-4e65-a461-67951957b3bb" />
+<img width="867" height="443" alt="image" src="https://github.com/user-attachments/assets/ddd422b5-9b53-4e65-a461-67951957b3bb" />
 
 
 ### 👤 Personal Feedback Viewer
-![Personal]<img width="872" height="415" alt="image" src="https://github.com/user-attachments/assets/1c66be75-3098-4298-9ad0-6b1fdd79d5e6" />
+<img width="872" height="415" alt="image" src="https://github.com/user-attachments/assets/1c66be75-3098-4298-9ad0-6b1fdd79d5e6" />
 
 <img width="869" height="444" alt="image" src="https://github.com/user-attachments/assets/02e07ead-c7f6-46c3-8aba-c115cea7ebd9" />
 
