@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Workshop Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Workshop Management</h1>
+            <p class="subtitle">Comprehensive workshop management system for registration and feedback collection.<br>
+            Join our AI workshop and help us improve future events with your valuable feedback.</p>
+        </header>
+
+        <nav class="navigation">
+            <button class="nav-btn active" data-section="registration">Registration</button>
+            <button class="nav-btn" data-section="students">Students</button>
+            <button class="nav-btn" data-section="submit-feedback">Submit Feedback</button>
+            <button class="nav-btn" data-section="view-feedback">View Feedback</button>
+        </nav>
+
+        <main>
+            <!-- Feature 1: Registration Section -->
+            <section id="registration" class="section active">
+                <div class="registration-layout">
+                    <div class="form-container">
+                        <h2>Register for AI Workshop</h2>
+                        <p>Join us for an exciting workshop on Artificial Intelligence. Please fill out the form below to register.</p>
+                        
+                        <form id="registration-form">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="organization">University/Organization</label>
+                            <input type="text" id="organization" name="organization" placeholder="Enter your university or organization" required>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Register for Workshop</button>
+                    </form>
+                </div>
+                
+                <!-- Workshop Details Box -->
+                <div class="workshop-details-box">
+                    <h3>Workshop Details</h3>
+                    <div class="detail-item">
+                        <span class="detail-label">Date:</span>
+                        <span class="detail-value">August 15-16, 2025</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Time:</span>
+                        <span class="detail-value">9:00 AM - 5:00 PM<br><small>(both days)</small></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Location:</span>
+                        <span class="detail-value">Tech Conference Center, Silicon Valley</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Format:</span>
+                        <span class="detail-value">In-person with live streaming option</span>
+                    </div>
+                    
+                    <div class="topics-section">
+                        <h4>Topics Covered:</h4>
+                        <ul class="topics-list">
+                            <li>🤖 Introduction to Machine Learning and Deep Learning</li>
+                            <li>🧠 Natural Language Processing and Computer Vision</li>
+                            <li>⚡ Hands-on AI Project Development</li>
+                            <li>🔮 Ethics in AI and Future Trends</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="instructor-info">
+                        <h4>Lead Instructor:</h4>
+                        <div class="instructor-card">
+                            <div class="instructor-avatar">👨‍🏫</div>
+                            <div class="instructor-details">
+                                <strong>Dr. Alex Chen</strong><br>
+                                <small>AI Research Scientist at TechCorp</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+            <!-- Feature 2: Students Section -->
+            <section id="students" class="section">
+                <h2>Registered Students</h2>
+                <div class="stats">
+                    <span id="student-count">0 registered</span>
+                </div>
+                
+                <div class="table-container">
+                    <table id="students-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Organization</th>
+                                <th>Registration Date</th>
+                            </tr>
+                        </thead>
+                        <tbody id="students-tbody">
+                            <!-- Students will be populated here -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Feature 3: Submit Feedback Section -->
+            <section id="submit-feedback" class="section">
+                <div class="form-container">
+                    <h2>Workshop Feedback</h2>
+                    <p>We value your feedback! Please share your feedback about the AI Workshop to help us improve future events.</p>
+                    
+                    <form id="feedback-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="feedbackName">Your Name</label>
+                                <input type="text" id="feedbackName" name="feedbackName" placeholder="Enter your name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="feedbackEmail">Email Address</label>
+                                <input type="email" id="feedbackEmail" name="feedbackEmail" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="rating-section">
+                            <h3>Rate Your Experience</h3>
+                            
+                            <div class="rating-group">
+                                <label>Overall Workshop Experience</label>
+                                <div class="star-rating" data-rating="overall">
+                                    <span class="star" data-value="1">★</span>
+                                    <span class="star" data-value="2">★</span>
+                                    <span class="star" data-value="3">★</span>
+                                    <span class="star" data-value="4">★</span>
+                                    <span class="star" data-value="5">★</span>
+                                </div>
+                            </div>
+                            
+                            <div class="rating-group">
+                                <label>Content Quality</label>
+                                <div class="star-rating" data-rating="content">
+                                    <span class="star" data-value="1">★</span>
+                                    <span class="star" data-value="2">★</span>
+                                    <span class="star" data-value="3">★</span>
+                                    <span class="star" data-value="4">★</span>
+                                    <span class="star" data-value="5">★</span>
+                                </div>
+                            </div>
+                            
+                            <div class="rating-group">
+                                <label>Instructor Performance</label>
+                                <div class="star-rating" data-rating="instructor">
+                                    <span class="star" data-value="1">★</span>
+                                    <span class="star" data-value="2">★</span>
+                                    <span class="star" data-value="3">★</span>
+                                    <span class="star" data-value="4">★</span>
+                                    <span class="star" data-value="5">★</span>
+                                </div>
+                            </div>
+                            
+                            <div class="rating-group">
+                                <label>Event Organization</label>
+                                <div class="star-rating" data-rating="organization">
+                                    <span class="star" data-value="1">★</span>
+                                    <span class="star" data-value="2">★</span>
+                                    <span class="star" data-value="3">★</span>
+                                    <span class="star" data-value="4">★</span>
+                                    <span class="star" data-value="5">★</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Would you recommend this workshop to others?</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="recommend" value="yes"> Yes, definitely</label>
+                                <label><input type="radio" name="recommend" value="maybe"> Maybe</label>
+                                <label><input type="radio" name="recommend" value="no"> No, I wouldn't</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="comments">Additional Comments</label>
+                            <textarea id="comments" name="comments" placeholder="Share any additional feedback, suggestions, or comments" rows="4"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Submit Feedback</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Feature 4: View Feedback Section -->
+            <section id="view-feedback" class="section">
+                <div class="feedback-header-controls">
+                    <h2>Workshop Feedback Dashboard</h2>
+                    <div class="view-controls">
+                        <button class="view-btn active" data-view="all">All Feedback</button>
+                        <button class="view-btn" data-view="personal">My Feedback</button>
+                    </div>
+                </div>
+                
+                <!-- Personal Feedback Lookup -->
+                <div id="personal-feedback-lookup" class="personal-lookup hidden">
+                    <div class="lookup-form">
+                        <input type="email" id="lookup-email" placeholder="Enter your email to view your feedback">
+                        <button id="lookup-btn" class="lookup-button">Find My Feedback</button>
+                    </div>
+                    <div id="personal-feedback-result"></div>
+                </div>
+                
+                <!-- All Feedback View -->
+                <div id="all-feedback-view">
+                
+                <div class="dashboard-stats">
+                    <div class="stat-card">
+                        <h3 id="total-responses">0</h3>
+                        <p>Total Responses</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 id="average-rating">0.0</h3>
+                        <p>Average Rating</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 id="recommend-count">0</h3>
+                        <p>Would Recommend</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 id="recommend-rate">0%</h3>
+                        <p>Recommendation Rate</p>
+                    </div>
+                </div>
+                
+                    <div class="feedback-list">
+                        <h3>Workshop Feedback <span id="feedback-count">0 responses</span></h3>
+                        <div id="feedback-entries">
+                            <!-- Feedback entries will be populated here -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
